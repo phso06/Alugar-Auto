@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlugarAuto | Aluguel de Carros em Catende/PE</title>
+    <style>
+    
+/* Reset & basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a { color: #e50d0d; text-decoration: none; }
+a:hover { opacity: 0.8; }
+
+/* Header */
+header {
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+header img.logo {
+    height: 50px;
+}
+nav a {
+    margin-left: 1.5rem;
+    font-weight: 600;
+}
+
+/* Hero */
+.hero {
+    background: url('https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_1280.jpg') center/cover no-repeat;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+.btn {
+    background: #e50d0d;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+/* Sections */
+section.section {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: auto;
+}
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #e50d0d;
+}
+
+/* Frota */
+.carros {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.carro {
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+.carro:hover { transform: translateY(-5px); }
+.carro img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.carro h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.carro p {
+    padding: 0 1rem 1rem;
+    font-size: 0.95rem;
+    color: #ddd;
+}
+
+/* Contato */
+#contato p {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 2;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Logo AlugarAuto" class="logo">
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#frota">Frota</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Alugue o carro ideal para sua jornada</h1>
+            <p>Praticidade, conforto e os melhores preços em Catende/PE.</p>
+            <a href="#contato" class="btn">Reserve Agora</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="section">
+        <h2>Sobre a AlugarAuto</h2>
+        <p>
+            Somos uma locadora de veículos localizada em Catende/PE, oferecendo carros confortáveis, seguros e com excelente custo-benefício para você rodar tranquilo.
+            Nosso atendimento é ágil e totalmente personalizado para garantir a melhor experiência aos nossos clientes.
+        </p>
+    </section>
+
+    <section id="frota" class="section">
+        <h2>Nossa Frota</h2>
+        <div class="carros">
+            <div class="carro">
+                <img src="https://cdn.pixabay.com/photo/2012/05/29/00/43/car-49278_1280.jpg" alt="Sedan Executivo">
+                <h3>Sedan Executivo</h3>
+                <p>Ideal para viagens confortáveis com a família ou compromissos de negócios.</p>
+            </div>
+            <div class="carro">
+                <img src="https://cdn.pixabay.com/photo/2017/08/01/08/29/car-2560701_1280.jpg" alt="SUV Off-Road">
+                <h3>SUV Off-Road</h3>
+                <p>Perfeito para aventuras e terrenos acidentados.</p>
+            </div>
+            <div class="carro">
+                <img src="https://cdn.pixabay.com/photo/2020/05/06/18/49/electric-car-5132093_1280.jpg" alt="Carro Econômico">
+                <h3>Carro Econômico</h3>
+                <p>Consumo reduzido e praticidade para o dia a dia.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <h2>Fale Conosco</h2>
+        <p>
+            <strong>📍 Local:</strong> Catende, Pernambuco<br>
+            <strong>📞 WhatsApp:</strong> <a href="https://wa.me/5581979132187" target="_blank">(81) 97913-2187</a><br>
+            <strong>📸 Instagram:</strong> <a href="https://instagram.com/alugarauto" target="_blank">@alugarauto</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2025 AlugarAuto. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
