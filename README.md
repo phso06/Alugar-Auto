@@ -1,2 +1,1 @@
 # Alugar-Auto
-o
